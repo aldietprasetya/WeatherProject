@@ -1,0 +1,78 @@
+@import "_custom";
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    #app {
+        .background {
+            display: block;
+            padding: 8% 11%;
+            margin: 0;
+            max-width: 100%;
+            background-size: cover !important;
+            position: relative;
+            .backgroundImages {
+                position: relative;
+                width: 800px;
+                margin: auto;
+                height: 69vh;
+                background-size: cover !important;
+                border-radius: 4px;
+                -webkit-box-shadow: 3px 4px 16px 3px rgba(0,0,0,0.8);
+                -moz-box-shadow: 3px 4px 16px 3px rgba(0,0,0,0.8);
+                box-shadow: 3px 4px 16px 3px rgba(0,0,0,0.8);
+                padding: 4% 7%; 
+                .currentDate {
+                    margin-bottom: 1.4em;
+                    p {
+                        color: #fff;
+                        margin: 0;
+                        font-size: 8pt;
+                    }
+                }
+                .overcast {
+                    text-transform: capitalize;
+                    color: #fff;
+                }
+                .detail {
+                    position: absolute;
+                    bottom: 40px;
+                    .temperature {
+                        color: #fff;
+                        font-size: 8em;
+                        margin: 0;
+                        .dot {
+                            vertical-align: top;
+                            font-size: .5em;
+                        }
+                        .celcius {
+                            font-weight: bold
+                        }
+                    }
+                    .location {
+                        text-transform: capitalize;
+                        color: #fff;
+                        position: absolute;
+                        bottom: 0px;
+                    }
+                }
+                
+            }
+            .CloudsPrimary {
+                background: url('assets/image/cloudsPrimary.jpg') no-repeat;
+            }
+            .FogPrimary {
+                background: url('assets/image/fogPrimary.jpg') no-repeat;
+            }
+        }
+        .CloudsSecondary {
+            background: url('assets/image/cloudsSecondary.jpg'), #abaabc8c;
+            background-blend-mode: overlay;
+        }
+        .FogSecondary {
+            background: url('assets/image/fogSecondary.jpg'), #abaabc8c;
+            background-blend-mode: overlay;
+        }
+    } 
+}
